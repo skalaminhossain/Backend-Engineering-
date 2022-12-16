@@ -14,7 +14,30 @@ const smartPhone = {
 
 }
 
-console.log(smartPhone);
-console.log(smartPhone.brand);
-smartPhone.makeCall(453646)
-console.log(smartPhone.users);
+// console.log(smartPhone);
+// console.log(smartPhone.brand);
+// smartPhone.makeCall(453646)
+// console.log(smartPhone.users);
+
+
+
+function SmartPhone(brand , model , makeYear){
+    this.brand = brand
+    this.model = model,
+    this.makeYear = makeYear
+    this.makeCall = function (phoneNumber){
+        console.log(phoneNumber);
+    }
+    this.isGood = function(){
+        return `Your ${this.brand} is Very Good`
+    }
+}
+
+const alaminPhone = new SmartPhone("Oppo", "a15s" , 2020)
+console.log(alaminPhone);
+alaminPhone.makeCall(546475)
+console.log(alaminPhone.isGood());
+
+const nazmulPhone = new SmartPhone("IPhone" , "13 pro max" , 2022)
+nazmulPhone.makeCall(435353)
+console.log(nazmulPhone);
