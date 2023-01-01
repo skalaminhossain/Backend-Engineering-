@@ -1,6 +1,6 @@
 const mobilePhone = {
-    vaberText : function(){
-        return `Amar Mobile ${this.brand} er ${this.model}`
+    vaberText : function(madeIN , designin){
+        return `Amar Mobile ${this.brand} er ${this.model} Made in ${madeIN} . Design by : ${designin}`
     }
 }
 
@@ -11,4 +11,4 @@ const iPhone = {
     model : "i13promax"
 }
 
-console.log(mobilePhone.vaberText.call(iPhone));
+console.log(mobilePhone.vaberText.call(iPhone , "Gulisthan" , "SKTECH"));
