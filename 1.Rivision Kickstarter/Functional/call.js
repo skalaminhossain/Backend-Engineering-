@@ -12,3 +12,17 @@ const iPhone = {
 }
 
 console.log(mobilePhone.vaberText.call(iPhone , "Gulisthan" , "SKTECH"));
+
+
+//
+const car = {
+    make: 'Toyota',
+    model: 'Camry',
+    year: 2020,
+    startEngine: function() {
+      console.log(`Starting engine of ${this.year} ${this.make} ${this.model}`);
+    }
+  };
+  
+  car.startEngine();
+  car.startEngine.call(car)
